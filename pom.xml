@@ -40,6 +40,9 @@
         <jackson.core.version>2.13.3</jackson.core.version>
         <modelmapper.version>2.4.4</modelmapper.version>
         <springdoc-openapi-ui.version>1.2.3</springdoc-openapi-ui.version>
+        <api-store.version>1.0.0</api-store.version>
+        <factory-parent.version>1.0.0</factory-parent.version>
+        <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -58,6 +61,41 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelmapper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.factory</groupId>
+                <artifactId>api-store</artifactId>
+                <version>${api-store.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.factory</groupId>
+                <artifactId>entity-store</artifactId>
+                <version>${factory-parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -66,11 +104,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
