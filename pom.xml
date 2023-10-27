@@ -179,6 +179,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>factory-FactoryRepository</id>
+            <name>factory-FactoryRepository</name>
+            <url>https://factory-781648067507.d.codeartifact.eu-central-1.amazonaws.com/maven/FactoryRepository/</url>
+        </repository>
+    </distributionManagement>
+
     <profiles>
         <profile>
             <id>default</id>
