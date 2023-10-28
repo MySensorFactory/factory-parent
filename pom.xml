@@ -48,6 +48,7 @@
         <spring-cloud-aws.version>2.3.1</spring-cloud-aws.version>
         <kafka-streams-avro-serde.version>7.5.0</kafka-streams-avro-serde.version>
         <kafka-streams.version>2.6.2</kafka-streams.version>
+        <entity-store.version>1.0.1</entity-store.version>
     </properties>
 
     <dependencyManagement>
@@ -94,7 +95,7 @@
             <dependency>
                 <groupId>com.factory</groupId>
                 <artifactId>entity-store</artifactId>
-                <version>${factory-parent.version}</version>
+                <version>${entity-store.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
